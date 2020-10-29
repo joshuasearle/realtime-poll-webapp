@@ -1,0 +1,32 @@
+.container {
+  width: max-content;
+  min-width: 30%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.question {
+  font-size: 2em;
+  text-align: center;
+}
+
+.question-option {
+  font-size: 1.2em;
+  margin-left: 4em;
+  margin-bottom: 0;
+}
+
+.questions {
+  margin-bottom: 1em;
+}
+
+.vote {
+  background-color: #007888;
+  color: white;
+  border: none;
+  width: 5em;
+  height: 3em;
+  margin: auto;
+  display: block;
+  margin-bottom: 2em;
+}
