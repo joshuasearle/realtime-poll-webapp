@@ -96,6 +96,10 @@ export class AppComponent {
   getLabels(): Label[] {
     return this.poll.options.map((option) => option.label);
   }
+
+  totalVotes() {
+    return this.poll.options.reduce((a, o) => a + o.votes, 0);
+  }
 }
 
 type Poll = {

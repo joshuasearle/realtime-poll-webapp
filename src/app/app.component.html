@@ -1,5 +1,8 @@
 <div *ngIf="this.poll" class="container">
-  <label class="question" for="poll">{{ poll.question }}</label>
+  <div class="question">
+    <label for="poll">{{ poll.question }}</label>
+  </div>
+
   <div class="questions">
     <div class="question-option" *ngFor="let option of poll.options">
       <label>
@@ -15,7 +18,7 @@
   </div>
   <button class="vote" (click)="sendMessage()">Vote</button>
 </div>
-<div *ngIf="this.poll" class="container" class="w-50 m-auto">
+<div *ngIf="this.poll" class="container" class="w-50 mx-auto mb-3">
   <canvas
     baseChart
     [data]="getData()"
@@ -27,4 +30,20 @@
     [colors]="chartColours"
   >
   </canvas>
+</div>
+<div *ngIf="this.poll" class="container w-50 mx-auto">
+  <table class="table table-striped">
+    <tr>
+      <th>Option</th>
+      <th>Votes</th>
+    </tr>
+    <tr *ngFor="let option of poll.options">
+      <td>{{ option.label }}</td>
+      <td>{{ option.votes }}</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>{{ totalVotes() }}</td>
+    </tr>
+  </table>
 </div>

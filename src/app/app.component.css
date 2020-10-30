@@ -8,12 +8,14 @@
 .question {
   font-size: 2em;
   text-align: center;
+  margin: auto;
+  width: max-content;
 }
 
 .question-option {
   font-size: 1.2em;
-  margin-left: 4em;
-  margin-bottom: 0;
+  margin: auto;
+  width: max-content;
 }
 
 .questions {
@@ -29,4 +31,9 @@
   margin: auto;
   display: block;
   margin-bottom: 2em;
+}
+
+.bottom-spacing {
+  position: relative;
+  margin-bottom: 500px;
 }

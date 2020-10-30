@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+th,
+td,
+table {
+  text-align: center;
+}
+
+html {
+  height: auto !important;
+  padding-bottom: 500px !important;
+}
